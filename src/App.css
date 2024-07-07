@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primaryBlack: #121212;
+}
+
+.container {
+  @apply w-[100vw] min-h-[100vh];
+}

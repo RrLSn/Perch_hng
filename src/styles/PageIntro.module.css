@@ -1,0 +1,29 @@
+.container {
+  top: 88px;
+  gap: 98px;
+  @apply w-[100%] h-[764px] bg-[#F5F5F5] flex items-center justify-center;
+}
+
+.intro {
+  @apply w-[391px] h-[144px];
+}
+
+.intro h1:nth-child(1) {
+  font-size: 60px;
+  line-height: 73.14px;
+  font-weight: 700;
+  color: var(--primaryBlack);
+}
+
+.intro h1:nth-child(2) {
+  font-size: 58px;
+  line-height: 70.7px;
+  font-weight: 700;
+  @apply text-[#905125];
+}
+
+.intro2 p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.2px;
+}

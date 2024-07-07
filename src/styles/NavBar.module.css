@@ -1,0 +1,63 @@
+.navWrapper {
+  padding: 20px 100px;
+  gap: 206px;
+  font-family: sans-serif;
+  @apply w-[100%] h-[88px] flex bg-[#F5F5F5] gap-x-[264px] items-center;
+}
+
+.navWrapper h1 {
+  font-family: "Nico-Moji";
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+  /* @apply text-6xl; */
+}
+
+span {
+  width: 61px;
+  height: 20px;
+  gap: 2px;
+  color: var(--primaryBlack);
+  @apply flex items-center;
+}
+
+span p {
+  @apply leading-[16.94px] font-[14px];
+}
+
+span img {
+  width: 12px;
+  height: 7.4px;
+  top: 8px;
+}
+
+span:nth-child(1) img {
+  left: 43px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+span:nth-child(2) img {
+  left: 61px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+span:nth-child(2) img {
+  left: 50px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.headerIcon img:nth-child(1) {
+  @apply w-[18px] h-[18px] top-[3px] left-[3px];
+}
+
+.headerIcon img:nth-child(2) {
+  @apply w-[16px] h-[16px] top-[4px] left-[48px];
+}
+
+.headerIcon img:nth-child(3) {
+  @apply w-[19.98px] h-[20px] top-[2px] left-[1px];
+}

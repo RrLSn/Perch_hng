@@ -1,0 +1,4 @@
+.container {
+  padding: 88px 100px;
+  @apply w-[100%] h-[832px] top-[890px] gap-[20px];
+}
