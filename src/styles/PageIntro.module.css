@@ -5,7 +5,16 @@
 }
 
 .intro {
-  @apply w-[391px] h-[144px];
+  @apply w-[391px] h-[144px] gap-[150px];
+}
+
+.collection {
+  @apply w-[170px] h-[24px] flex gap-[4px] text-[#905125] items-center border-b-[1px] border-b-[#905125] pb-2;
+}
+
+.intro,
+.collection p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro h1:nth-child(1) {
@@ -22,8 +31,12 @@
   @apply text-[#905125];
 }
 
+.intro2 {
+  @apply w-[402px] h-[74px] gap-[26px] flex flex-col justify-between;
+}
+
 .intro2 p {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 24.2px;
+  line-height: 24.38px;
 }

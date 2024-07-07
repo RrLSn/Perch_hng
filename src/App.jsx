@@ -1,9 +1,10 @@
 // import { useState } from "react";
 import "./App.css";
 import NavBar from "./Components/NavBar";
+import NewArrivals from "./Components/NewArrivals";
 import PageIntro from "./Components/PageIntro";
 import Product from "./Components/Product";
-import "./fonts.css";
+import ADs from "./Components/ADs";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <NavBar />
       <PageIntro />
       <Product />
+      <NewArrivals />
+      <ADs />
     </div>
   );
 }

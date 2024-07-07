@@ -4,19 +4,22 @@ import styles from "@/styles/PageIntro.module.css";
 const PageIntro = () => {
   return (
     <div className={styles.container}>
-      <div className="w-[402px] h-[368px] gap-[150px]">
+      <div className="w-[402px] h-[368px] gap-[150px] flex flex-col justify-between">
         <div className={styles.intro}>
           <h1>Elevate Your</h1>
           <h1>COMFORT</h1>
         </div>
+
         <div className={styles.intro2}>
-          <p>Want comfort and style? Perch is for you.</p>
-          <div className=" w-[170px] h-[24px] flex gap-[4px] text-[#905125] items-center">
+          <p className="font-'Inter'">
+            Want comfort and style? Perch is for you.
+          </p>
+          <div className={styles.collection}>
             <p>See collection</p>
             <img
               src="./SVG/arrowRight.svg"
               alt="icon"
-              className="w-[24px] h-[24px]"
+              className="w-[15px] h-[11.31px] top-[6.35] left-[4.5px] mt-2"
             />
           </div>
         </div>

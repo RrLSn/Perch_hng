@@ -1,4 +1,22 @@
 .container {
   padding: 88px 100px;
-  @apply w-[100%] h-[832px] top-[890px] gap-[20px];
+  @apply w-[100%] h-[832px] top-[890px] gap-[20px] flex justify-between items-center;
+}
+
+.shop {
+  @apply w-[111px] h-[24px] inline-flex gap-[4px] text-[#905125] items-center border-b-[1px] border-b-[#905125];
+}
+
+.shop p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-family: "Montserrat";
+}
+
+.product_name {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34.13px;
+  font-family: "Montserrat";
 }

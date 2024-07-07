@@ -2,7 +2,7 @@
   padding: 20px 100px;
   gap: 206px;
   font-family: sans-serif;
-  @apply w-[100%] h-[88px] flex bg-[#F5F5F5] gap-x-[264px] items-center;
+  @apply max-w-[100%] h-[88px] inline-flex bg-[#F5F5F5] gap-x-[264px] items-center w-[auto];
 }
 
 .navWrapper h1 {

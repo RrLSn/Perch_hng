@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className={styles.navWrapper}>
       <h1>Perch</h1>
-      <div className="flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px]">
+      <div className="inline-flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px]">
         <p>Home</p>
         <span>
           <p>Shop</p>
