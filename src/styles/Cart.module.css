@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primaryColor: #905125;
+}
 .container {
   @apply w-[100%] min-h-[1869px] top-[127px] gap-[80px];
 }
@@ -32,11 +36,115 @@
 
 .cartDetails {
   border: 1px 0px;
-  border-color: #905125;
+  border-color: var(--primaryColor);
   padding: 20px;
-  @apply w-[100%] min-h-[279.93px] gap-[22px];
+  @apply w-[100%] min-h-[279.93px] gap-[22px] mt-[];
 }
 
-.summmary {
-  @apply w-[100%] h-[392px] gap-[199pxpx];
+.detailHeader {
+  @apply w-[100%] h-[20px] gap-[185px] border-b-[1px] border-[#905125] pb-[1px] flex justify-between;
+}
+
+.detailHeader span p {
+  font-family: "Monterrat";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+}
+
+.productCard {
+  @apply w-[100%] h-[187.93px] gap-[155px] mt-[2rem] flex justify-between items-center;
+}
+
+.productDetails {
+  @apply w-[163px] h-[94px] gap-[13px] flex flex-col justify-between;
+}
+
+.productDetails h1 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.05px;
+}
+
+.productDetails p {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+.qty {
+  width: 66px;
+  height: 23px;
+  border-radius: 2px;
+  border: 0.5px solid var(--primaryColor);
+  padding: 2px 4px;
+  gap: 12px;
+  @apply flex justify-between;
+}
+
+.qty p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+.price {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+}
+
+.coupon {
+  @apply w-[431px] h-[130px] gap-[20px] flex flex-col justify-between;
+}
+
+.coupon h1 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+}
+
+.coupon p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.coupon span {
+  @apply flex w-[100%] h-[39px] gap-[20px];
+}
+
+.coupon span input {
+  border: 1px solid var(--primaryColor);
+  @apply w-[347px] h-[39px] rounded-[5px] p-[10px] gap-[10px] bg-white;
+}
+
+.coupon span input::placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #121212 50%;
+}
+
+.coupon span button {
+  @apply w-[56px] h-[39px] rounded-[5px] p-[10px] gap-[10px] text-white;
+  background: var(--primaryColor);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+.summary {
+  border: 1px solid var(--primaryColor);
+  @apply max-w-[531px] h-[392px] rounded-[5px] p-[15px] gap-[25px];
+}
+
+.summary button {
 }
