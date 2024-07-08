@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  height: 811px;
+  top: 3338px;
+  padding: 30px 0px;
+  gap: 143px;
+  background: var(--background);
+  @apply flex flex-col items-center;
+}
+
+.submission {
+  width: 1081px;
+  height: 314px;
+  border: 1px solid #905125;
+  gap: 30px;
+  @apply flex flex-col items-center justify-center;
+}
+
+.footerContent {
+  width: 376px;
+  max-height: 77px;
+  margin-top: 0;
+  @apply flex flex-col items-center;
+}
+
+.footerContent h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.88px;
+}
+
+.footerContent p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input {
+  background-color: var(--background);
+  height: 30px;
+  width: 90%;
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #121212 50%;
+}
+
+button {
+  width: 77px;
+  height: 39px;
+  background: #905125;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  cursor: pointer;
+  @apply flex items-center justify-center text-[#ffffff];
+}
+
+.logo {
+  font-family: "Nico-Moji";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  padding: 8px 0px;
+}
+
+.footers {
+  @apply flex w-[100%] h-[24px] gap-[20px] justify-between;
+}
+
+.footers p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+}
+
+footer {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+  @apply flex w-[100%] h-[39px] gap-[10px] justify-center items-center border-t-[1px]
+    border-[#905125] p-[10px] text-[#905125];
+}

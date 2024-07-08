@@ -2,7 +2,8 @@
   padding: 20px 100px;
   gap: 206px;
   font-family: sans-serif;
-  @apply max-w-[100%] h-[88px] inline-flex bg-[#F5F5F5] gap-x-[264px] items-center w-[auto];
+  z-index: 3;
+  @apply w-[100%] h-[88px] inline-flex bg-[#F5F5F5] gap-x-[264px] items-center z-[1px];
 }
 
 .navWrapper h1 {
@@ -60,4 +61,20 @@ span:nth-child(2) img {
 
 .headerIcon img:nth-child(3) {
   @apply w-[19.98px] h-[20px] top-[2px] left-[1px];
+}
+
+.iconContainer {
+  @apply headerIcon flex h-[24px] w-[124px] gap-[20px] justify-between;
+}
+
+.iconContainer img {
+  @apply w-[18px] h-[18px];
+}
+
+.iconContainer p {
+  @apply w-[12px] h-[12px] rounded-full p-[8px] gap-[10px] bg-[#905125] flex justify-center items-center text-[#ffffff];
+}
+
+.cart {
+  @apply w-[36px] h-[100%] flex justify-between;
 }

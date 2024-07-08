@@ -1,12 +1,12 @@
 // import React from "react";
-import styles from "@/styles/NewArrivals.module.css";
+import styles from "../styles/NewArrivals.module.css";
 
 const NewArrivals = () => {
   return (
     <div className={styles.container}>
       <h1>New Arrivals</h1>
 
-      <main>
+      <main className={styles.content}>
         <div className={styles.arrivals}>
           <div className={styles.imageCard}>
             <img src="./SVG/tyleyChair.svg" alt="image" />

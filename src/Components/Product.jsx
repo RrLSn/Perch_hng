@@ -1,11 +1,11 @@
 // import React from "react";
-import styles from "@/styles/Product.module.css";
+import styles from "../styles/Product.module.css";
 
 const Product = () => {
   return (
     <div className={styles.container}>
-      <div className="w-[530px] h-[655px] p-[30px] bg-[#F5F5F5] inline-flex justify-between">
-        <div className="w-[194px] h-[70px] gap-[12px] flex flex-col justify-between absolute">
+      <div className="w-[530px] h-[655px] p-[30px] bg-[#F5F5F5] inline-flex">
+        <div className="w-[194px] h-[70px] gap-[12px] flex flex-col justify-between z-1">
           <p className={styles.product_name}>Scandinavian</p>
           <span className={styles.shop}>
             <p>Shop now</p>
@@ -19,7 +19,7 @@ const Product = () => {
         <img
           src="./SVG/scandinavian.svg"
           alt="image"
-          className="w-[370px] h-[566px] relative"
+          className="w-[370px] h-[566px] z-2 ml-[-10rem]"
         />
       </div>
 

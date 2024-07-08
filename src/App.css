@@ -4,8 +4,5 @@
   padding: 0;
   box-sizing: border-box;
   --primaryBlack: #121212;
-}
-
-.container {
-  @apply w-[100vw] min-h-[100vh];
+  --background: #f5f5f5;
 }

@@ -14,7 +14,7 @@
   @apply text-center;
 }
 
-main {
+.content {
   padding: 20px 100px;
   @apply w-[100%] h-[405px] gap-[20px] flex justify-between;
 }

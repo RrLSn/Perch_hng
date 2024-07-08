@@ -1,5 +1,5 @@
 // import React from "react";
-import styles from "@/styles/PageIntro.module.css";
+import styles from "../styles/PageIntro.module.css";
 
 const PageIntro = () => {
   return (
