@@ -21,7 +21,7 @@ const Footer = () => {
             />
             <input type="email" placeholder="Email address" />
           </div>
-          <button>Sign up</button>
+          <button className={styles.footerButton}>Sign up</button>
         </form>
       </div>
       <div className="w-[440px] h-[112px] gap-[40px] flex flex-col items-center">

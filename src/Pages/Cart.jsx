@@ -1,12 +1,14 @@
-// // import React from "react";
+// import React from "react";
 import styles from "../styles/Cart.module.css";
 
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import { useState } from "react";
+import Summary from "../Components/Summary";
 
 const Cart = () => {
   const [quantity, setquatity] = useState(0);
+
   const quntityIncrement = () => {
     setquatity(quantity + 1);
   };
@@ -16,6 +18,7 @@ const Cart = () => {
       setquatity(quantity - 1);
     }
   };
+
   return (
     <div className={styles.container}>
       <NavBar />
@@ -68,20 +71,16 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] h-[392px] gap-[119px]">
+        <div className="w-[100%] h-[392px] gap-[119px] flex justify-between">
           <div className={styles.coupon}>
             <h1>Have a coupon?</h1>
             <p>Add your code for instant discount</p>
             <span>
               <input type="text" placeholder="Code" />
-              <button>Apply</button>
+              <button className={styles.applyButton}>Apply</button>
             </span>
           </div>
-          <div className={styles.summary}>
-            <span></span>
-            {/* <span></span> */}
-            {/* <button></button> */}
-          </div>
+          <Summary />
         </div>
       </main>
       <Footer />

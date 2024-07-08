@@ -55,9 +55,9 @@ input::placeholder {
   color: #121212 50%;
 }
 
-button {
-  width: 77px;
-  height: 39px;
+.footerButton {
+  min-width: 77px;
+  min-height: 39px;
   background: #905125;
   padding: 10px;
   border-radius: 5px;

@@ -1,0 +1,7 @@
+.container {
+  @apply w-[100vw] h-[2099px] top-[127px] gap-[80px];
+}
+
+.checkOut {
+  @apply w-[100%] h-[1208px] gap-[85px];
+}

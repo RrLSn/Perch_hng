@@ -141,10 +141,99 @@
   line-height: 19.36px;
 }
 
-.summary {
-  border: 1px solid var(--primaryColor);
-  @apply max-w-[531px] h-[392px] rounded-[5px] p-[15px] gap-[25px];
+.coupon span button:hover {
+  background: #844213;
 }
 
-.summary button {
+.summary {
+  border: 1px solid var(--primaryColor);
+  @apply max-w-[531px] h-[392px] rounded-[5px] p-[15px] gap-[25px] flex flex-col justify-between;
+}
+
+.summary div:nth-child(1) h1 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+}
+
+.summary div:nth-child(1) span {
+  @apply w-[501px] h-[101px] gap-[13px];
+}
+
+.delivery {
+  @apply w-[100%] max-h-[101px] gap-[13px];
+}
+
+.delivery span {
+  @apply w-[100%] max-h-[44px] rounded-[5px] border-[1px] justify-between p-[10px] flex items-center mt-[2rem];
+  border: 1px solid var(--primaryColor);
+}
+
+.option {
+  @apply flex min-w-[153px] h-[24px] gap-[12px] items-center;
+}
+
+.option p {
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.subtotal,
+.total {
+  @apply w-[100%] h-[22px] flex justify-between;
+}
+
+.subtotal p {
+  font-weight: 500;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.total p {
+  font-family: "Inter";
+  font-size: 600;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.applyButton {
+  min-width: 64px;
+  min-height: 39px;
+  background: #905125;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  cursor: pointer;
+  @apply flex items-center justify-center text-[#ffffff];
+}
+
+.applyButton:hover {
+  background: #844213;
+}
+
+.summaryButton {
+  min-width: 501px;
+  min-height: 72px;
+  background: var(--primaryColor);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26.63px;
+  cursor: pointer;
+  @apply flex items-center justify-center text-[#ffffff];
+}
+
+.summaryButton:hover {
+  background: #844213;
 }
