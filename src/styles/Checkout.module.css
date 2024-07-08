@@ -1,7 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
-  @apply w-[100vw] h-[2099px] top-[127px] gap-[80px];
+  @apply max-w-[100vw] max-h-[2099px] gap-[80px] gap-[80px];
 }
 
 .checkOut {
-  @apply w-[100%] h-[1208px] gap-[85px];
+  @apply max-w-[1080px] h-[1208px] gap-[85px] flex flex-col justify-between items-center my-[2.5rem] m-auto;
+}
+
+.checkOut h1 {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58.51px;
+}
+
+.content {
+  @apply max-w-[1080px] max-h-[1064px] gap-[20px] flex justify-between;
+}
+
+.buyerInfo {
+  @apply w-[530px] h-[100%] gap-[22px];
+}
+
+.address {
+  @apply w-[100%] max-h-[478px] rounded-[5px] p-[15px] gap-[30px];
+  border: 1px solid #905125;
+}
+
+.addForm {
+  @apply min-w-[500px] min-h-[392px] gap-[17px];
 }
