@@ -2,7 +2,7 @@
   padding: 20px 100px;
   font-family: sans-serif;
   z-index: 3;
-  @apply w-[100%] h-[88px] inline-flex bg-[#F5F5F5] justify-between items-center z-[1px];
+  @apply w-[100%] h-[88px] sm:w-[393px] inline-flex bg-[#F5F5F5] justify-between items-center z-[1px];
 }
 
 .navWrapper h1 {

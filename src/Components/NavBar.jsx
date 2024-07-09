@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className={styles.navWrapper}>
       <h1>Perch</h1>
-      <div className="lg:flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px]">
+      <div className="lg:flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px] sm:hidden">
         <Link to="/">
           <p>Home</p>
         </Link>
