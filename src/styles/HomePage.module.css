@@ -7,3 +7,9 @@
 .container {
   @apply w-screen min-h-[100vh] max-w-[auto] max-h-[auto] top-[88px] gap-[28px];
 }
+
+@media (max-width: 393px) {
+  .container {
+    width: 393px;
+  }
+}
