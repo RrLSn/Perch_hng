@@ -1,8 +1,17 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   --primaryBlack: #121212;
   --background: #f5f5f5;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }

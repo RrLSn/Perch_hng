@@ -1,7 +1,7 @@
 .container {
   top: 88px;
-  gap: 98px;
-  @apply w-[100%] h-[764px] bg-[#F5F5F5] flex items-center justify-center;
+  /* gap: 98px; */
+  @apply w-screen max-w-[auto] max-h-[auto] h-[764px] bg-[#F5F5F5] flex items-center xl:justify-center xl:gap-[98px];
 }
 
 .intro {

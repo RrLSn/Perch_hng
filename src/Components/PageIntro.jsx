@@ -27,7 +27,7 @@ const PageIntro = () => {
       <img
         src="./SVG/slipper.svg"
         alt="image"
-        className="w-[580px] h-[665px]"
+        className="w-[581px] h-[665px]"
       />
     </div>
   );

@@ -3,6 +3,7 @@
   height: 550px;
   padding: 20px 100px;
   gap: 20px;
+  @apply xl:w-screen;
 }
 
 .content {

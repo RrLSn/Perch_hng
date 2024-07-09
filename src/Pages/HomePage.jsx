@@ -1,4 +1,4 @@
-// import React from "react";
+// // import React from "react";
 import NavBar from "../Components/NavBar";
 import NewArrivals from "../Components/NewArrivals";
 import PageIntro from "../Components/PageIntro";
