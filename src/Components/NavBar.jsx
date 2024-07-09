@@ -1,8 +1,15 @@
 // import React from "react";
+import { useState } from "react";
 import styles from "../styles/NavBar.module.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const [isDissolved, setIsDissolved] = useState(false);
+
+  const handleDissolve = () => {
+    setIsDissolved(true);
+  };
+
   return (
     <nav className={styles.navWrapper}>
       {/* <div className={styles.hamburger}></div> */}
@@ -28,7 +35,12 @@ const NavBar = () => {
         <div className={styles.iconContainer}>
           <img src="./SVG/searchIcon.svg" alt="icon" />
           <img src="./SVG/person.svg" alt="icon" />
-          <div className={styles.cart}>
+          <div
+            className={`${styles.cart} ${
+              isDissolved ? styles.isDissolved : ""
+            }`}
+            onClick={handleDissolve}
+          >
             <img src="./SVG/cart.svg" alt="icon" />
             <p>1</p>
           </div>

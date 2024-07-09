@@ -78,6 +78,21 @@ span:nth-child(2) img {
   @apply w-[36px] h-[100%] flex justify-between;
 }
 
+@keyframes dissolve {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.cart.dissolve {
+  animation-name: dissolve;
+  animation-timing-function: ease-in;
+  animation-duration: 800ms;
+}
+
 @media (max-width: 393px) {
   .navWrapper {
     background: red;
