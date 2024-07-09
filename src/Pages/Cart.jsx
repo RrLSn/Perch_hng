@@ -40,7 +40,7 @@ const Cart = () => {
           </div>
           <div className={styles.productCard}>
             <span className="w-[346px] h-[100%] gap-[20px]">
-              <div className="w-[163px] h-[100%] px-[6.30px] py-[25.57px] gap-[6.39px] bg-[#f5f5f5] flex items-center justify-center">
+              <div className="w-[163px] h-[100%] xl:px-[6.30px] xl:py-[25.57px] lg:px-[6.39px] lg:py-[25.57px] gap-[6.39px] bg-[#f5f5f5] flex items-center justify-center">
                 <img
                   src="/SVG/zefisonChair.svg"
                   alt="image"
@@ -71,7 +71,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] h-[392px] gap-[119px] flex justify-between">
+        <div className="w-[100%] h-[392px] xl:gap-[119px] lg:gap-[61px] flex justify-center">
           <div className={styles.coupon}>
             <h1>Have a coupon?</h1>
             <p>Add your code for instant discount</p>
@@ -81,7 +81,7 @@ const Cart = () => {
             </span>
           </div>
           <div className={styles.summary}>
-            <div className="w-[501px] h-[154px] gap-[24px]">
+            <div className="xl:w-[501px] lg:w-[442px] h-[154px] gap-[24px]">
               <h1>Cart Summary</h1>
               <div className={styles.delivery}>
                 <span>

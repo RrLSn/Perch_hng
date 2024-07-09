@@ -7,13 +7,14 @@
 :root {
   --primaryColor: #905125;
 }
+
 .container {
-  @apply w-[100%] min-h-[1869px] top-[127px] gap-[80px];
+  @apply w-[100%] xl:h-[1869px] lg:h-[1655.93px] xl:top-[127px] lg:top-[120px] xl:gap-[80px] lg:gap-[60px];
 }
 
 .content {
   margin-top: 88px;
-  @apply w-[1081px] h-[977.93px] gap-[64px] m-auto flex flex-col justify-between z-[1px] mb-[5rem] mt-[2rem] items-center;
+  @apply xl:w-[1081px] lg:w-[1024px] xl:h-[977.93px] lg:h-[910.93px] xl:gap-[64px] gap-[56px] m-auto flex flex-col justify-between z-[1px] mb-[5rem] mt-[2rem] items-center;
 }
 
 .cartAds {
@@ -38,7 +39,7 @@
   border: 1px 0px;
   border-color: var(--primaryColor);
   padding: 20px;
-  @apply w-[100%] min-h-[279.93px] gap-[22px] mt-[];
+  @apply w-[100%] min-h-[279.93px] xl:gap-[22px] lg:gap-[26px];
 }
 
 .detailHeader {
@@ -147,7 +148,7 @@
 
 .summary {
   border: 1px solid var(--primaryColor);
-  @apply max-w-[531px] h-[392px] rounded-[5px] p-[15px] gap-[25px] flex flex-col justify-between;
+  @apply xl:w-[531px] lg:w-[472px] h-[392px] rounded-[5px] p-[15px] gap-[25px] flex flex-col justify-between;
 }
 
 .summary div:nth-child(1) h1 {
@@ -162,19 +163,23 @@
 }
 
 .delivery {
-  @apply w-[100%] max-h-[101px] gap-[13px];
+  @apply w-[100%] xl:h-[101px] lg:h-[154px] xl:gap-[13px] lg:gap-[24px];
 }
 
 .delivery span {
-  @apply w-[100%] max-h-[44px] rounded-[5px] border-[1px] justify-between p-[10px] flex items-center mt-[2rem];
+  @apply max-w-[100%] max-h-[44px] rounded-[5px] border-[1px] justify-between p-[10px] flex items-center mt-[2rem];
   border: 1px solid var(--primaryColor);
 }
 
 .option {
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.78px;
   @apply flex min-w-[153px] h-[24px] gap-[12px] items-center;
 }
 
-.option p {
+.delivery span {
   font-family: "inter";
   font-weight: 500;
   font-size: 18px;
@@ -220,7 +225,6 @@
 }
 
 .summaryButton {
-  min-width: 501px;
   min-height: 72px;
   background: var(--primaryColor);
   gap: 10px;
@@ -231,7 +235,7 @@
   font-size: 22px;
   line-height: 26.63px;
   cursor: pointer;
-  @apply flex items-center justify-center text-[#ffffff];
+  @apply xl:w-[501px] lg:w-[442px] flex items-center justify-center text-[#ffffff];
 }
 
 .summaryButton:hover {

@@ -25,7 +25,7 @@ const ADs = () => {
         <img
           src="./SVG/unsplash.svg"
           alt="image"
-          className="w-[530px] h-[530px]"
+          className="xl:w-[530px] xl:h-[530px] lg:w-[460.19px] lg:h-[460.19px]"
         />
       </div>
     </div>

@@ -1,9 +1,10 @@
 .container {
   width: 100%;
-  height: 408px;
-  top: 2850px;
-  padding: 20px 100px;
-  margin-top: 3rem;
+  /* height: 408px; */
+  /* top: 2850px; */
+  /* padding: 20px 100px; */
+  /* margin-top: 3rem; */
+  @apply xl:top-[2850px] xl:h-[408px] xl:px-[100px] xl:py-[20px] lg:h-[388px] lg:px-[30px] lg:py-[10px] xl:mt-[3rem] lg:mt-[7rem] xl:mb-0 lg:mb-[2rem];
 }
 
 .container h1 {

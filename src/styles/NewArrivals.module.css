@@ -15,8 +15,8 @@
 }
 
 .content {
-  padding: 20px 100px;
-  @apply w-[100%] h-[405px] gap-[20px] flex;
+  padding: 20px 0;
+  @apply w-[100%] h-[405px] gap-[20px] flex lg:px-[30px] xl:px-[100px];
 }
 
 .arrivals {
@@ -30,10 +30,6 @@
   padding: 40px 10px;
   background: #f5f5f5;
   @apply w-[255px] h-[294px] gap-[10px] flex items-center justify-center;
-}
-
-main .arrivals span {
-  @apply max-w-[115px] h-[41px] gap-[6px];
 }
 
 .details {

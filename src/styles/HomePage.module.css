@@ -5,5 +5,5 @@
 }
 
 .container {
-  @apply w-screen min-h-[100vh] top-[88px] gap-[28px];
+  @apply w-screen min-h-[100vh] max-w-[auto] max-h-[auto] top-[88px] gap-[28px];
 }
