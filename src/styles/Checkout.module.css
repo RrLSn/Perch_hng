@@ -4,26 +4,19 @@
   box-sizing: border-box;
 }
 .container {
-  @apply max-w-[100vw] max-h-[2099px] gap-[80px] gap-[80px];
+  @apply max-w-[100vw] max-h-[2099px] gap-[80px];
 }
 
 .checkOut {
-  @apply max-w-[1080px] h-[1208px] gap-[85px] flex flex-col justify-between items-center my-[2.5rem] m-auto;
-}
-
-.checkOut h1 {
-  font-family: "Montserrat";
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 58.51px;
+  @apply max-w-[1080px] h-[1208px] gap-[85px] flex flex-col justify-between my-[2.5rem] m-auto;
 }
 
 .content {
-  @apply max-w-[1080px] max-h-[1064px] gap-[20px] flex justify-between;
+  @apply w-[100%] h-[1064px] gap-[20px] flex justify-between;
 }
 
 .buyerInfo {
-  @apply w-[530px] h-[100%] gap-[22px];
+  @apply w-[530px] h-[100%] gap-[22px] flex flex-col justify-between;
 }
 
 .address {
@@ -32,5 +25,149 @@
 }
 
 .addForm {
-  @apply min-w-[500px] min-h-[392px] gap-[17px];
+  @apply min-w-[500px] min-h-[392px] gap-[17px] flex flex-col justify-between mt-[3rem];
+}
+
+.fillInfo {
+  @apply w-[100%] min-h-[80px] gap-[8px];
+}
+
+.fillInfo p,
+.footerInfo p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.fillInfo span {
+  @apply w-[100%] h-[46px] rounded-[5px] flex justify-between pr-[1rem];
+  border: 1px solid #905125;
+}
+
+.fillInfo span img {
+  @apply w-[12px] h-[7.4px] top-[21px] left-[277px];
+}
+
+.fillInput {
+  background: none;
+  padding: 10px;
+}
+
+.footerInfo {
+  @apply w-[240px] h-[100%] flex flex-col;
+}
+
+.footerInfo input {
+  background: none;
+  padding: 10px;
+  border: 1px solid #905125;
+  @apply w-[100%] h-[46px] rounded-[5px] p-[10px];
+}
+
+.payInfo {
+  border: 1px solid #905125;
+  @apply w-[100%] h-[376px] gap-[24px] rounded-[5px] p-[15px] flex flex-col justify-between;
+}
+
+.payInfo h1 {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.payForm {
+  @apply w-[501px] h-[288px] gap-[16px] flex flex-col justify-between;
+}
+
+.payFooter {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #121212 50%;
+}
+
+.orderBtn {
+  @apply w-[100%] h-[72px] rounded-[6px] flex justify-center items-center bg-[#905125];
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  line-height: 34px;
+}
+
+.orderSummary {
+  @apply w-[530px] h-[458.59px] rounded-[5px] p-[15px] gap-[25px] flex flex-col justify-between;
+  border: 1px solid #905125;
+}
+
+.orderSummary h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+
+.orderContent {
+  @apply w-[100%] h-[191.59px%] gap-[18px] flex flex-col justify-between;
+}
+
+.order {
+  @apply w-[163.px] h-[79px] gap-[8px] flex flex-col justify-between;
+}
+
+.order h2 {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+
+.order p {
+  font-family: "Inter";
+}
+
+.delivery {
+  @apply w-[100%] max-h-[101px] gap-[13px] flex flex-col justify-between;
+}
+
+.delivery span {
+  @apply w-[100%] min-h-[44px] rounded-[5px] justify-between p-[10px] flex items-center;
+  border: 1px solid #905125;
+}
+
+.option {
+  @apply flex min-w-[153px] h-[24px] gap-[12px] items-center;
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.price {
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.subtotal,
+.total {
+  @apply w-[100%] h-[22px] flex justify-between;
+}
+
+.subtotal p {
+  font-weight: 500;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.total p {
+  font-family: "Inter";
+  font-size: 600;
+  font-size: 18px;
+  line-height: 21.78px;
 }
