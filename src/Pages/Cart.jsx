@@ -3,21 +3,27 @@ import styles from "../styles/Cart.module.css";
 
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-import { useState } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../CartContext";
 
 const Cart = () => {
-  const [quantity, setquatity] = useState(0);
+  const { quantity, setQuantity, price, setPrice, subTotal, expressShipping } =
+    useContext(CartContext);
 
-  const quntityIncrement = () => {
-    setquatity(quantity + 1);
+  const quantityIncrement = () => {
+    setQuantity(quantity + 1);
   };
 
-  const quantitydecrement = () => {
-    if (quantity > 1) {
-      setquatity(quantity - 1);
+  const quantityDecrement = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
     }
   };
+
+  useEffect(() => {
+    setPrice(350 * quantity);
+  }, [quantity, setPrice]);
 
   return (
     <div className={styles.container}>
@@ -62,12 +68,16 @@ const Cart = () => {
             </span>
             <div className="w-[550px] flex justify-between mr-[2rem]">
               <span className={styles.qty}>
-                <p onClick={quantitydecrement}>-</p>
+                <p onClick={quantityDecrement} className="cursor-pointer">
+                  -
+                </p>
                 <p>{quantity}</p>
-                <p onClick={quntityIncrement}>+</p>
+                <p onClick={quantityIncrement} className="cursor-pointer">
+                  +
+                </p>
               </span>
-              <p className={styles.price}>$350</p>
-              <p className={styles.price}>$350</p>
+              <p className={styles.price}>${price}</p>
+              <p className={styles.price}>${price}</p>
             </div>
           </div>
         </div>
@@ -104,20 +114,20 @@ const Cart = () => {
                     />
                     Express shipping
                   </p>
-                  <p>+$20.00</p>
+                  <p>+${expressShipping}.00</p>
                 </span>
               </div>
             </div>
             <div className="max-w-[100%] h-[86px] flex flex-col justify-between gap-[21px] items-center">
               <span className={styles.total}>
                 <p>Subtotal</p>
-                <p>$370.00</p>
+                <p>${subTotal}.00</p>
               </span>
               <p className="w-[404px] border-[1px] border-[#905125]"></p>
 
               <span className={styles.subtotal}>
                 <p>Total</p>
-                <p>$370.00</p>
+                <p>${subTotal}.00</p>
               </span>
             </div>
             <Link to="/checkout">

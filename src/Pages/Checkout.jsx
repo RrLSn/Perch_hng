@@ -3,8 +3,12 @@
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import styles from "../styles/Checkout.module.css";
+import { useContext } from "react";
+import { CartContext } from "../CartContext";
 
 const Checkout = () => {
+  const { subTotal, expressShipping } = useContext(CartContext);
+
   return (
     <div className={styles.container}>
       <NavBar />
@@ -198,20 +202,20 @@ const Checkout = () => {
                   />
                   Express shipping
                 </p>
-                <p className={styles.price}>+$20.00</p>
+                <p className={styles.price}>+${expressShipping}.00</p>
               </span>
             </div>
 
             <div className="max-w-[100%] h-[86px] flex flex-col justify-between gap-[21px] items-center">
               <span className={styles.total}>
                 <p>Subtotal</p>
-                <p>$370.00</p>
+                <p>${subTotal}.00</p>
               </span>
               <p className="w-[404px] border-[1px] border-[#905125]"></p>
 
               <span className={styles.subtotal}>
                 <p>Total</p>
-                <p>$370.00</p>
+                <p>${subTotal}.00</p>
               </span>
             </div>
           </div>

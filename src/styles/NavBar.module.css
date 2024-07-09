@@ -77,3 +77,9 @@ span:nth-child(2) img {
 .cart {
   @apply w-[36px] h-[100%] flex justify-between;
 }
+
+@media (max-width: 393px) {
+  .navWrapper {
+    background: red;
+  }
+}

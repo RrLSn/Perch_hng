@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Cart from "./Pages/Cart";
 import HomePage from "./Pages/HomePage";
 import Checkout from "./Pages/Checkout";
+import { CartProvider } from "./CartContext";
 
 function App() {
   const routes = createBrowserRouter([
@@ -23,9 +24,11 @@ function App() {
   ]);
 
   return (
-    <div className="App">
-      <RouterProvider router={routes} />
-    </div>
+    <CartProvider>
+      <div className="App">
+        <RouterProvider router={routes} />
+      </div>
+    </CartProvider>
   );
 }
 
