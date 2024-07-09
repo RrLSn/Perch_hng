@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className={styles.navWrapper}>
-      <div className={styles.hamburger}></div>
+      {/* <div className={styles.hamburger}></div> */}
       <h1>Perch</h1>
       <div className="lg:flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px]">
         <Link to="/">
