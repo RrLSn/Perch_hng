@@ -35,10 +35,10 @@ const Cart = () => {
         </header>
         <div className={styles.cartDetails}>
           <div className={styles.detailHeader}>
-            <span className="w-[339px] h-[100%] gap-[10px] flex text-center">
+            <span className={styles.product}>
               <p>Product</p>
             </span>
-            <span className="w-[556px] h-[100%] gap-[186px] flex">
+            <span className="w-[556px] h-[100%] gap-[186px] flex xs:hidden">
               <p>Quality</p>
               <p>Total</p>
               <p>Subtotal</p>
@@ -81,7 +81,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] h-[392px] xl:gap-[119px] lg:gap-[61px] flex justify-center">
+        <div className={styles.summaryWrap}>
           <div className={styles.coupon}>
             <h1>Have a coupon?</h1>
             <p>Add your code for instant discount</p>
@@ -123,7 +123,7 @@ const Cart = () => {
                 <p>Subtotal</p>
                 <p>${subTotal}.00</p>
               </span>
-              <p className="w-[404px] border-[1px] border-[#905125]"></p>
+              <p className={styles.line}></p>
 
               <span className={styles.subtotal}>
                 <p>Total</p>

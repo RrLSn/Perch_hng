@@ -57,6 +57,10 @@
   @apply w-[100%] h-[187.93px] gap-[155px] mt-[2rem] flex justify-between items-center;
 }
 
+.product {
+  @apply w-[339px] h-[100%] gap-[10px] flex text-center;
+}
+
 .productDetails {
   @apply w-[163px] h-[94px] gap-[13px] flex flex-col justify-between;
 }
@@ -114,6 +118,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21.78px;
+}
+
+.summaryWrap {
+  @apply w-[100%] h-[392px] xl:gap-[119px] lg:gap-[61px] xl:flex lg:flex justify-center;
 }
 
 .coupon span {
@@ -186,6 +194,10 @@
   line-height: 21.78px;
 }
 
+.line {
+  @apply w-[404px] border-[1px] border-[#905125];
+}
+
 .subtotal,
 .total {
   @apply w-[100%] h-[22px] flex justify-between;
@@ -240,4 +252,63 @@
 
 .summaryButton:hover {
   background: #844213;
+}
+
+@media (max-width: 394px) {
+  .container {
+    @apply h-[max-content] w-[100vw];
+  }
+
+  .content {
+    @apply h-[max-content];
+  }
+  .cartAds {
+    @apply w-[366px] h-[87px] gap-[24px];
+  }
+
+  .cartAds h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.88px;
+  }
+
+  .cartAds p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+  }
+
+  .productCard {
+    @apply hidden;
+  }
+
+  .summaryWrap {
+    @apply w-[100vw] h-[540px];
+    padding: 0 16px;
+    gap: 40px;
+  }
+
+  .coupon {
+    @apply w-[361px] h-[130px] gap-[20px] mb-[2rem];
+  }
+
+  .coupon span input {
+    @apply w-[279px];
+  }
+
+  .coupon span button {
+    @apply w-[54px];
+  }
+
+  .summary {
+    @apply w-[361px] h-[max-content];
+  }
+
+  .line {
+    @apply w-[266px];
+  }
+
+  .summaryButton {
+    @apply w-[331px] h-[50px] p-[6px];
+  }
 }

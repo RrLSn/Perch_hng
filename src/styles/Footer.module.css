@@ -106,7 +106,7 @@ footer {
   .container {
     width: 100vw;
     height: 551px;
-    @apply flex flex-col justify-between pt-[28px] pb-[16px];
+    @apply flex flex-col justify-between pt-[28px] pb-[16px] pl-[1rem];
   }
 
   .submission {
