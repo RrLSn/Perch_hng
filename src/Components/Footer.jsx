@@ -9,7 +9,7 @@ const Footer = () => {
           <h1>Join Our Newsletter</h1>
           <p>Big discount and latest news in your inbox</p>
         </div>
-        <form className="flex w-[100%] h-[42px] gap-[20px] items-center justify-center">
+        <form className={styles.submissionForm}>
           <div
             className="flex w-[438px] h-[100%]
           rounded-[1px] p-[10px] gap-[8px] border-[1px] border-[#905125] items-center"
@@ -24,7 +24,7 @@ const Footer = () => {
           <button className={styles.footerButton}>Sign up</button>
         </form>
       </div>
-      <div className="w-[440px] h-[112px] gap-[40px] flex flex-col items-center">
+      <div className={styles.footerConnect}>
         <h1 className={styles.logo}>Perch</h1>
         <div className={styles.footers}>
           <p>About Us</p>

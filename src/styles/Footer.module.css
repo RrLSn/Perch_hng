@@ -33,6 +33,10 @@
   font-size: 16px;
 }
 
+.submissionForm {
+  @apply flex w-[100%] h-[42px] gap-[20px] items-center justify-center;
+}
+
 input {
   background-color: var(--background);
   height: 30px;
@@ -66,6 +70,10 @@ input::placeholder {
   @apply flex items-center justify-center text-[#ffffff];
 }
 
+.footerConnect {
+  @apply max-w-[440px] min-h-[112px] gap-[40px] flex flex-col items-center;
+}
+
 .logo {
   font-family: "Nico-Moji";
   font-weight: 400;
@@ -75,7 +83,7 @@ input::placeholder {
 }
 
 .footers {
-  @apply flex w-[100%] h-[24px] gap-[20px] justify-between;
+  @apply lg:flex xl:flex w-[100%] h-[24px] gap-[20px] justify-between;
 }
 
 .footers p {
@@ -92,4 +100,65 @@ footer {
   line-height: 19.36px;
   @apply flex w-[100%] h-[39px] gap-[10px] justify-center items-center border-t-[1px]
     border-[#905125] p-[10px] text-[#905125];
+}
+
+@media (max-width: 394px) {
+  .container {
+    width: 100vw;
+    height: 551px;
+    @apply flex flex-col justify-between pt-[28px] pb-[16px];
+  }
+
+  .submission {
+    height: 139px;
+    width: 361px;
+    gap: 36px;
+    padding: 8px 0;
+  }
+
+  .footerContent {
+    @apply w-[361px] h-[49px] gap-[8px];
+  }
+
+  .submissionForm {
+    @apply w-[348px] h-[37px] gap-[12px];
+  }
+
+  .submissionForm div {
+    padding: 4px 6px;
+    @apply rounded-[5px];
+  }
+
+  .submission div img {
+    @apply w-[15px] h-[12px] top-[12.5px] left-[7.5px];
+  }
+
+  .footerContent h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+  }
+
+  .footerContent p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.1px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+  }
+
+  .footerButton {
+    @apply w-[70px] h-[37px] gap-[10px];
+  }
+
+  .footerConnect {
+    @apply w-[120px] h-[244px] gap-[40px] mr-[auto];
+  }
+  .footers {
+    @apply flex flex-col justify-between;
+  }
 }

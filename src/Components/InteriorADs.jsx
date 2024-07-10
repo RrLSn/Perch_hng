@@ -5,14 +5,14 @@ const InteriorADs = () => {
   return (
     <div className={styles.container}>
       <h1>Perch chairs</h1>
-      <main className="xl:w-[1080px] lg:w-[964px] h-[309px] gap-[42px] flex flex-col">
+      <main className="xl:w-[1080px] lg:w-[964px] max-h-[309px] gap-[42px] flex flex-col items-between">
         <div className={styles.content}>
           <img src="/SVG/interior1.svg" alt="image" />
           <img src="/SVG/interior2.svg" alt="image" />
           <img src="/SVG/interior3.svg" alt="image" />
         </div>
-        <span className="w-[140px] h-[24px] border-b-[1px] pb-[5px] border-b-[#905125] flex gap-[4px] text-[#905125]">
-          <p className="text-[20px]">See more</p>
+        <span className={styles.seeMore}>
+          <p>See more</p>
           <img
             src="/SVG/arrowRight.svg"
             alt="icon"

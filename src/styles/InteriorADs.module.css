@@ -1,10 +1,5 @@
 .container {
-  width: 100%;
-  /* height: 408px; */
-  /* top: 2850px; */
-  /* padding: 20px 100px; */
-  /* margin-top: 3rem; */
-  @apply xl:top-[2850px] xl:h-[408px] xl:px-[100px] xl:py-[20px] lg:h-[388px] lg:px-[30px] lg:py-[10px] xl:mt-[3rem] lg:mt-[7rem] xl:mb-0 lg:mb-[2rem];
+  @apply w-[100vw] xl:top-[2850px] xl:h-[408px] xl:px-[100px] xl:py-[20px] lg:h-[388px] lg:px-[30px] lg:py-[10px] xl:mt-[3rem] lg:mt-[7rem] xl:mb-0 lg:mb-[2rem];
 }
 
 .container h1 {
@@ -22,9 +17,54 @@ main {
 }
 
 .content {
-  @apply h-[238px] w-[100%] gap-[20px] flex;
+  @apply lg:h-[238px] xl:h-[238px] xl:w-[100%] lg:w-[100%] gap-[20px] flex xs:w-[361px] p-0 xs:h-[222px];
 }
 
 .content img {
-  @apply w-[347px] h-[238px];
+  @apply xl:w-[347px] lg:w-[347px] lg:h-[238px] xl:h-[238px] xs:w-[266px] xs:h-[182px];
+}
+
+.seeMore {
+  @apply w-[140px]  h-[24px] border-b-[1px] pb-[5px] border-b-[#905125] flex gap-[4px] text-[#905125];
+}
+
+.seeMore p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.26px;
+}
+
+@media (max-width: 394px) {
+  .container {
+    border-top: 1px solid #905125;
+    padding: 24px 0;
+    @apply m-[auto] xs:w-[361px] xs:h-[357px];
+  }
+
+  .container h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+    @apply text-left;
+  }
+
+  main {
+    @apply w-[361px] h-[277px] gap-0 mt-0;
+  }
+
+  .content {
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .seeMore {
+    @apply w-[142px] h-[29px];
+  }
+
+  .seeMore P {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29.26px;
+  }
 }
