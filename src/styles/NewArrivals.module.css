@@ -3,6 +3,7 @@
   height: 464px;
   top: 1760px;
   margin-top: 2.5rem;
+  @apply flex flex-col items-center;
 }
 
 .container h1 {
@@ -11,25 +12,24 @@
   font-weight: 500;
   line-height: 39.01px;
   color: #905125;
-  @apply text-center;
 }
 
 .content {
   padding: 20px 0;
-  @apply w-[100%] h-[405px] gap-[20px] flex lg:px-[30px] xl:px-[100px];
+  @apply max-w-[100%] h-[405px] gap-[20px] flex lg:px-[30px] xl:px-[100px];
 }
 
 .arrivals {
-  width: 255px;
-  height: 365px;
+  max-width: 255px;
+  max-height: 365px;
   gap: 30px;
-  @apply flex flex-col;
+  /* @apply flex flex-col; */
 }
 
 .imageCard {
   padding: 40px 10px;
   background: #f5f5f5;
-  @apply w-[255px] h-[294px] gap-[10px] flex items-center justify-center;
+  @apply w-[255px] h-[294px] gap-[10px]  flex items-center justify-center;
 }
 
 .details {
@@ -51,4 +51,41 @@
 }
 
 @media (max-width: 394px) {
+  .container {
+    width: 100vw;
+  }
+
+  .container h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .content {
+    padding: 0 16px;
+    @apply w-[100vw] h-[437px];
+  }
+
+  .arrivals {
+    @apply w-[255px] h-[365px] flex flex-col justify-between;
+  }
+
+  .imageCard img {
+    @apply w-[199px] h-[284px];
+  }
+
+  .details {
+    @apply min-w-[89px] h-[41px] gap-[6px];
+  }
+
+  .details p:nth-child(1) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  .details p:nth-child(2) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.52px;
+  }
 }
