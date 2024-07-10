@@ -12,9 +12,16 @@ const NavBar = () => {
 
   return (
     <nav className={styles.navWrapper}>
-      {/* <div className={styles.hamburger}></div> */}
-      <h1>Perch</h1>
-      <div className="lg:flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px]">
+      <div className="min-w-[126px] min-h-[24px] max-w-[auto] max-h-[auto] flex justify-between items-center">
+        <div className={styles.hamburger}>
+          <img src="/SVG/hamburgerMenu.svg" alt="" />
+        </div>
+
+        <h1>Perch</h1>
+      </div>
+      <div
+        className={`${styles.links} lg:flex w-[308px] justify-between text-center items-center leading-[16.94px] font-[14px]`}
+      >
         <Link to="/">
           <p>Home</p>
         </Link>
@@ -33,7 +40,11 @@ const NavBar = () => {
       </div>
       <Link to="/cart">
         <div className={styles.iconContainer}>
-          <img src="./SVG/searchIcon.svg" alt="icon" />
+          <img
+            src="./SVG/searchIcon.svg"
+            alt="icon"
+            className={styles.search}
+          />
           <img src="./SVG/person.svg" alt="icon" />
           <div
             className={`${styles.cart} ${

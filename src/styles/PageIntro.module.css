@@ -1,7 +1,7 @@
 .container {
   top: 88px;
   /* gap: 98px; */
-  @apply w-screen  h-[764px] bg-[#F5F5F5] flex items-center xl:justify-center xl:gap-[98px] lg:p-[30px];
+  @apply w-screen  h-[764px];
 }
 
 .intro {
@@ -9,7 +9,7 @@
 }
 
 .collection {
-  @apply w-[170px] h-[24px] flex gap-[4px] text-[#905125] items-center border-b-[1px] border-b-[#905125] pb-2;
+  @apply max-w-[170px] max-h-[24px] flex gap-[4px] text-[#905125] items-center border-b-[1px] border-b-[#905125] lg:pb-2 xl:pb-2;
 }
 
 .intro,
@@ -32,11 +32,90 @@
 }
 
 .intro2 {
-  @apply w-[402px] h-[74px] gap-[26px] flex flex-col justify-between;
+  @apply max-w-[402px] max-h-[74px] lg:gap-[26px] xl:gap-[26px] flex flex-col justify-between;
 }
 
 .intro2 p {
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
+}
+
+.searchInput {
+  @apply xl:hidden lg:hidden;
+}
+
+@media (max-width: 394px) {
+  .container {
+    width: 361px;
+    height: max-content;
+    margin: auto;
+  }
+
+  .searchInput {
+    @apply w-[361px] h-[32px] rounded-[20px] gap-[8px] flex justify-center m-[auto] items-center mt-[12px] mb-[20px];
+    padding: 4px 6px;
+    border: 0.5px solid black;
+  }
+
+  .searchInput input {
+    @apply w-[90%] h-[100%] bg-white;
+    padding: 3px 7px;
+  }
+
+  .searchInput input::placeholder {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #121212 50%;
+  }
+
+  .container div:nth-child(2) {
+    @apply p-[8px] h-[529px];
+  }
+
+  .container div:nth-child(2) h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    /* display: none; */
+  }
+
+  .elevate {
+    @apply w-[278px] h-[170px] gap-4;
+  }
+
+  .intro {
+    @apply w-[255px] h-[78px];
+  }
+
+  .intro2 {
+    @apply w-[278px] h-[14px] gap-[14px];
+  }
+
+  .intro2 p {
+    /* display: none; */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+  }
+
+  .collection {
+    @apply w-[129px] h-[18px] flex;
+  }
+
+  .collection p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18.29px;
+  }
+
+  .collection img {
+    @apply w-[11.25px] h-[8.48px] top-[4.76px] left-[2.28px];
+  }
+
+  .slipperChair {
+    @apply w-[353px] h-[346px];
+  }
 }

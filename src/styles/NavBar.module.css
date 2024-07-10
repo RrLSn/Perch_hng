@@ -63,7 +63,7 @@ span:nth-child(2) img {
 }
 
 .iconContainer {
-  @apply headerIcon flex h-[24px] w-[124px] gap-[20px] justify-between;
+  @apply headerIcon flex max-h-[24px] max-w-[124px] gap-[20px] justify-between;
 }
 
 .iconContainer img {
@@ -87,14 +87,34 @@ span:nth-child(2) img {
   }
 }
 
-.cart.dissolve {
+.cart {
   animation-name: dissolve;
   animation-timing-function: ease-in;
   animation-duration: 800ms;
 }
 
-@media (max-width: 393px) {
+.hamburger {
+  @apply xl:hidden lg:hidden;
+}
+
+@media (max-width: 394px) {
   .navWrapper {
-    background: red;
+    width: 100vw;
+    padding: 8px 16px;
+    height: 40px;
+  }
+
+  .navWrapper h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .search {
+    display: none;
   }
 }
